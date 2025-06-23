@@ -33,13 +33,8 @@ If not found, it checks Blob and returns the result.
 Clients don’t see any difference.
 
 Diagram
-See diagram.png.
+Pls refer diagram.png for a simple data flow understanding
 
-Repo structure
-├── diagram.png            # architecture diagram
-├── function/              # sample archival function
-├── api_fallback/          # example fallback code  
-├── README.md
 Why this works
 * Simple to build and maintain
 * Saves money on storage and throughput
@@ -48,3 +43,8 @@ Why this works
 
 Notes
 Use Blob Lifecycle rules to control long-term storage cost.
+
+Additional workarounds:
+1. we can also use ADF pipeline for data transfer. 
+2. we can use Azure data lake gen2 instead of Azure storage accounts.
+3. Lifecycle policies on Archival data also in storage account.
