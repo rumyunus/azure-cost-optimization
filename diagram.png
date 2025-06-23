@@ -1,0 +1,11 @@
+Client
+|
+v
+[API]
+|
+v
+[Cosmos DB] --(if not found)--> [Blob Storage]
+
+[Archival Function]
+|
++--> Runs daily, moves >3 months old data to Blob
